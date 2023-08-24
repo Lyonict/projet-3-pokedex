@@ -1,4 +1,5 @@
 // Components
+import Header from './components/Header'
 import PokemonCardList from './components/PokemonCardList'
 // Css
 import './App.css'
@@ -9,8 +10,10 @@ function App() {
 
   return (
     <>
-      <h1>This will be where the future pokedex will be</h1>
-      <PokemonCardList />
+      <Header />
+      <main>
+        <PokemonCardList />
+      </main>
     </>
   )
 }

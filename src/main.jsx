@@ -1,14 +1,17 @@
+// React import
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import Root from './roots/root.jsx'
-import Home from './roots/Home.jsx'
+// Routes
+import Root from './routes/root.jsx'
+import Home from './routes/Home.jsx'
+import PokemonPage from './routes/PokemonPage.jsx'
+// Css
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PokemonPage from './roots/PokemonPage.jsx'
 
 const router = createBrowserRouter([
   {

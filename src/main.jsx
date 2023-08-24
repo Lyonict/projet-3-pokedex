@@ -8,7 +8,7 @@ import Root from './roots/root.jsx'
 import Home from './roots/Home.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header.jsx'
+import PokemonPage from './roots/PokemonPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,13 +19,16 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />
       },
+      {
+        path: "pokemon/:pokemonId",
+        element: <PokemonPage />
+      }
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

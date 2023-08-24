@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 // Hooks
 import useFetch from '../hooks/useFetch'
 import capitalize from '../hooks/capitalize'
@@ -6,7 +7,6 @@ import capitalize from '../hooks/capitalize'
 export default function PokemonCardList() {
   const url = "https://pokeapi.co/api/v2/pokemon?limit=24&offset=0"
   const {data:pokemonData, error} = useFetch(url)
-  console.log(pokemonData)
 
   return (
     <section className="container pokemon-cards-section">
@@ -19,12 +19,12 @@ export default function PokemonCardList() {
         pokemonData.results.map((pokemon) => {
           return(
             <li key={pokemon.name} className='col-12 col-sm-4 col-md-3 col-lg-2'>
-              <a href='#' className="h-100 p-0 card">
+              <Link to={`pokemon/${getPokemonId(pokemon.url)}`} className="h-100 p-0 card">
                 <div className="card-body">
-                  <img src={getPokemonId(pokemon.url)} alt={`Image of ${pokemon.name}`} />
+                  <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getPokemonId(pokemon.url)}.png`} alt={`Image of ${pokemon.name}`} />
                   <h5 className='card-title'>{capitalize(pokemon.name)}</h5>
                 </div>
-              </a>
+              </Link>
             </li>
           )
         })
@@ -43,5 +43,5 @@ const getPokemonId = (pokemonUrl) => {
   // Capture the id at the very end of the url
   const regex = /pokemon\/(\d*)/
   const pokemonId = pokemonUrl.match(regex)[1]
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`
+  return pokemonId
 }

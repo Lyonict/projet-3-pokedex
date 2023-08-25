@@ -12,6 +12,7 @@ import PokemonPage from './routes/PokemonPage.jsx'
 // Css
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PokedexPage from './routes/PokedexPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "pokemon/:pokemonId",
         element: <PokemonPage />
+      },
+      {
+        path: "pokedex",
+        element: <PokedexPage />
       }
     ]
   },

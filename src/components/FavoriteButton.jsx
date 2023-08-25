@@ -12,7 +12,6 @@ export default function FavoriteButton({ id }) {
     const index = favorites.indexOf(id)
     if(index === -1) {
       favorites.push(id)
-      console.log(favorites)
       localStorage.setItem("POKEDEX_FAVORITES", JSON.stringify(favorites))
       setIsFavorite(true)
     } else {

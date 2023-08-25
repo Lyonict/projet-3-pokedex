@@ -8,7 +8,7 @@ export default function Header() {
           <Link to={"/"} className="navbar-brand">Home</Link>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#" className="nav-link">Pokedex</a>
+              <Link to={"/pokedex"} className="nav-link">Pokedex</Link>
             </li>
           </ul>
         </div>

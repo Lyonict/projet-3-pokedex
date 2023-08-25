@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 // Hooks
 import useFetch from '../hooks/useFetch'
 import capitalize from '../hooks/capitalize'
+// Components
+import FavoriteButton from './FavoriteButton'
 
 export default function PokemonCardList() {
   const url = "https://pokeapi.co/api/v2/pokemon?limit=24&offset=0"
@@ -24,6 +26,7 @@ export default function PokemonCardList() {
                 <div className="card-body">
                   <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getPokemonId(pokemon.url)}.png`} alt={`Image of ${pokemon.name}`} />
                   <h5 className='card-title'>{capitalize(pokemon.name)}</h5>
+                  <FavoriteButton id={getPokemonId(pokemon.url)} />
                 </div>
               </Link>
             </li>

@@ -1,0 +1,432 @@
+.theme-normal .pokemon-header {
+  background-color: #A8A77A;
+}
+
+.theme-normal .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-normal .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-normal .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fire .pokemon-header {
+  background-color: #EE8130;
+}
+
+.theme-fire .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fire .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-fire .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-water .pokemon-header {
+  background-color: #6390F0;
+}
+
+.theme-water .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-water .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-water .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-electric .pokemon-header {
+  background-color: #F7D02C;
+}
+
+.theme-electric .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-electric .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-electric .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-grass .pokemon-header {
+  background-color: #7AC74C;
+}
+
+.theme-grass .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-grass .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-grass .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ice .pokemon-header {
+  background-color: #96D9D6;
+}
+
+.theme-ice .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ice .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-ice .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fighting .pokemon-header {
+  background-color: #C22E28;
+}
+
+.theme-fighting .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fighting .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-fighting .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-poison .pokemon-header {
+  background-color: #A33EA1;
+}
+
+.theme-poison .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-poison .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-poison .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ground .pokemon-header {
+  background-color: #E2BF61;
+}
+
+.theme-ground .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ground .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-ground .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-flying .pokemon-header {
+  background-color: #A98FF3;
+}
+
+.theme-flying .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-flying .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-flying .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-psychic .pokemon-header {
+  background-color: #F95587;
+}
+
+.theme-psychic .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-psychic .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-psychic .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-bug .pokemon-header {
+  background-color: #A6B91A;
+}
+
+.theme-bug .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-bug .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-bug .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-rock .pokemon-header {
+  background-color: #B6A136;
+}
+
+.theme-rock .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-rock .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-rock .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ghost .pokemon-header {
+  background-color: #735797;
+}
+
+.theme-ghost .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ghost .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-ghost .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-dragon .pokemon-header {
+  background-color: #6F35FC;
+}
+
+.theme-dragon .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-dragon .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-dragon .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-dark .pokemon-header {
+  background-color: #705746;
+}
+
+.theme-dark .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-dark .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-dark .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-steel .pokemon-header {
+  background-color: #B7B7CE;
+}
+
+.theme-steel .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-steel .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-steel .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fairy .pokemon-header {
+  background-color: #D685AD;
+}
+
+.theme-fairy .pokemon-stats .pokemon-types-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-fairy .pokemon-stats .pokemon-types-container li {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.theme-fairy .pokemon-stats .pokemon-stat-array ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.normal-badge.type-badge {
+  background-color: #A8A77A;
+  color: white;
+}
+
+.fire-badge.type-badge {
+  background-color: #EE8130;
+  color: white;
+}
+
+.water-badge.type-badge {
+  background-color: #6390F0;
+  color: white;
+}
+
+.electric-badge.type-badge {
+  background-color: #F7D02C;
+  color: white;
+}
+
+.grass-badge.type-badge {
+  background-color: #7AC74C;
+  color: white;
+}
+
+.ice-badge.type-badge {
+  background-color: #96D9D6;
+  color: white;
+}
+
+.fighting-badge.type-badge {
+  background-color: #C22E28;
+  color: white;
+}
+
+.poison-badge.type-badge {
+  background-color: #A33EA1;
+  color: white;
+}
+
+.ground-badge.type-badge {
+  background-color: #E2BF61;
+  color: white;
+}
+
+.flying-badge.type-badge {
+  background-color: #A98FF3;
+  color: white;
+}
+
+.psychic-badge.type-badge {
+  background-color: #F95587;
+  color: white;
+}
+
+.bug-badge.type-badge {
+  background-color: #A6B91A;
+  color: white;
+}
+
+.rock-badge.type-badge {
+  background-color: #B6A136;
+  color: white;
+}
+
+.ghost-badge.type-badge {
+  background-color: #735797;
+  color: white;
+}
+
+.dragon-badge.type-badge {
+  background-color: #6F35FC;
+  color: white;
+}
+
+.dark-badge.type-badge {
+  background-color: #705746;
+  color: white;
+}
+
+.steel-badge.type-badge {
+  background-color: #B7B7CE;
+  color: white;
+}
+
+.fairy-badge.type-badge {
+  background-color: #D685AD;
+  color: white;
+}
+/*# sourceMappingURL=PokemonPage.css.map */

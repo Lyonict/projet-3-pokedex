@@ -20,7 +20,7 @@ export default function PokemonCardList({pokemonData, error}) {
           const pokemonId = getPokemonId(pokemon)
           return(
             <li key={pokemon.name} className='col-12 col-sm-4 col-md-3 col-lg-2'>
-              <Link to={`pokemon/${pokemonId}`} className="h-100 p-0 card">
+              <Link to={`/pokemon/${pokemonId}`} className="h-100 p-0 card">
                 <div className="card-body">
                   <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`} alt={`Image of ${pokemon.name}`} />
                   <h5 className='card-title'>{capitalize(pokemon.name)}</h5>

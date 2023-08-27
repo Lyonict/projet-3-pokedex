@@ -1,15 +1,12 @@
-
+import { useEffect } from 'react'
 // React import
 import { Link } from 'react-router-dom'
 // Hooks
-import useFetch from '../hooks/useFetch'
 import capitalize from '../hooks/capitalize'
 // Components
 import FavoriteButton from './FavoriteButton'
 
-export default function PokemonCardList() {
-  const url = "https://pokeapi.co/api/v2/pokemon?limit=24&offset=0"
-  const {data:pokemonData, error} = useFetch(url)
+export default function PokemonCardList({pokemonData, error}) {
 
   return (
     <section className="container pokemon-cards-section">
@@ -19,14 +16,15 @@ export default function PokemonCardList() {
         <h2>Loading...</h2>}
         {/* Pokemon card */}
         {pokemonData &&
-        pokemonData.results.map((pokemon) => {
+        pokemonData.map((pokemon) => {
+          const pokemonId = getPokemonId(pokemon)
           return(
             <li key={pokemon.name} className='col-12 col-sm-4 col-md-3 col-lg-2'>
-              <Link to={`pokemon/${getPokemonId(pokemon.url)}`} className="h-100 p-0 card">
+              <Link to={`pokemon/${pokemonId}`} className="h-100 p-0 card">
                 <div className="card-body">
-                  <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getPokemonId(pokemon.url)}.png`} alt={`Image of ${pokemon.name}`} />
+                  <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`} alt={`Image of ${pokemon.name}`} />
                   <h5 className='card-title'>{capitalize(pokemon.name)}</h5>
-                  <FavoriteButton id={getPokemonId(pokemon.url)} />
+                  <FavoriteButton id={pokemonId} />
                 </div>
               </Link>
             </li>
@@ -43,9 +41,15 @@ export default function PokemonCardList() {
 
 // Recuperate the pokemon's ID through it's url
 // Avoid an API call just to get the path for each pkmon img
-const getPokemonId = (pokemonUrl) => {
+const getPokemonId = (pokemonData) => {
   // Capture the id at the very end of the url
-  const regex = /pokemon\/(\d*)/
-  const pokemonId = pokemonUrl.match(regex)[1]
-  return pokemonId
+  if(pokemonData.url !== undefined) {
+    const pokemonUrl = pokemonData.url
+    const regex = /pokemon\/(\d*)/
+    const pokemonId = pokemonUrl.match(regex)[1]
+    return pokemonId
+  } else if(pokemonData.id !== undefined) {
+    pokemonData.id
+    return pokemonData.id
+  }
 }

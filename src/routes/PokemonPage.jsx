@@ -8,7 +8,7 @@ export default function PokemonPage() {
   // We recuperate the id of the pokemon from the params, and then we do the API call
   const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${useParams().pokemonId}`
   const { data:pokemonData, error } = useFetch(pokemonUrl)
-  console.log(pokemonData)
+
   return (
     <>
       {/* Loading State */}

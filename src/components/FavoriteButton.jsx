@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 
 export default function FavoriteButton({ id }) {
   const [isFavorite, setIsFavorite] = useState(false)
+  // Sanitize id type
+  const pokemonId = parseInt(id)
 
   const handleClick = (e) => {
     e.preventDefault()
@@ -9,9 +11,9 @@ export default function FavoriteButton({ id }) {
     if(favorites === null){
       favorites = []
     }
-    const index = favorites.indexOf(id)
+    const index = favorites.indexOf(pokemonId)
     if(index === -1) {
-      favorites.push(id)
+      favorites.push(pokemonId)
       localStorage.setItem("POKEDEX_FAVORITES", JSON.stringify(favorites))
       setIsFavorite(true)
     } else {
@@ -24,12 +26,12 @@ export default function FavoriteButton({ id }) {
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem("POKEDEX_FAVORITES"))
     if(favorites !== null) {
-      setIsFavorite(favorites.includes(id))
+      setIsFavorite(favorites.includes(pokemonId))
     }
-  }, [id])
+  }, [pokemonId])
 
 
   return (
-    <button key={id} className={"btn " + (isFavorite ? "btn-danger" : "btn-light")} onClick={handleClick}>{isFavorite ? "Added" : "Add"}</button>
+    <button key={pokemonId} className={"btn " + (isFavorite ? "btn-danger" : "btn-light")} onClick={handleClick}>{isFavorite ? "Added" : "Add"}</button>
   )
 }

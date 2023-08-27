@@ -18,14 +18,14 @@ export default function PokemonPage() {
       {pokemonData &&
       <div className={`theme-${pokemonData.types[0].type.name}`}>
         <section className="pokemon-opening-info">
-          <div className="py-3 pokemon-header">
-            <h1>{capitalize(pokemonData.name)}</h1>
+          <div className="py-3 mb-3 pokemon-header">
+            <h1 className="text-white">{capitalize(pokemonData.name)}</h1>
           </div>
           {/* Pokemon Stats */}
-          <div className="container pokemon-stats">
-            <img src={pokemonData.sprites.front_default} alt={`Image of ${capitalize(pokemonData.name)}`} className="w-100" />
-            <div>
-              <div>
+          <div className="container d-flex flex-column flex-sm-row pokemon-stats">
+            <img src={pokemonData.sprites.front_default} alt={`Image of ${capitalize(pokemonData.name)}`} className="flex-grow-1" />
+            <div className="d-flex flex-column justify-content-center">
+              <div className="d-flex justify-content-between">
                 <ul className="pokemon-types-container">
                   {pokemonData.types.map((type) => {
                     return (
@@ -33,7 +33,7 @@ export default function PokemonPage() {
                     )
                   })}
                 </ul>
-                <h3>PokeDex #{pokemonData.id}</h3>
+                <h3>#{pokemonData.id}</h3>
               </div>
               <div className="pokemon-stat-array">
                 <ul>
